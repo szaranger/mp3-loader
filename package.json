@@ -1,0 +1,31 @@
+{
+  "name": "mp3-loader",
+  "version": "1.0.0",
+  "description": "We will be using the <audio> HTML element to play an imported audio file. For that, we need to know the path of the imported MP3 file, emit it in the webpack's build directory, and provide that file path as the `src` attrbiute of the <audio> element.",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rimraf build/*.{js,mp3}",
+    "test": "jest",
+    "build": "yarn clean && webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "jest": "^27.3.1",
+    "memfs": "^3.4.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "schema-utils": "^4.0.0",
+    "webpack": "^5.64.4"
+  }
+}
