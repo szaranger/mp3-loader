@@ -7,7 +7,7 @@ module.exports = function (source) {
   const assetStats = fs.statSync(this.resourcePath);
   
   if (assetStats.size > options.maxSizeBytes) {
-    logger.warn('Imported MP3 file is too large!')
+    logger.warn('Imported MP3 file is too large!');
   }
 
   const filename = path.basename(this.resourcePath);
